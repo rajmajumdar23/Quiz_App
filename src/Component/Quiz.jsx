@@ -35,9 +35,7 @@ const Quiz = () => {
   return (
     <div className="quiz-container">
       <Routes>
-        {!nameFilled ? (
           <Route path="/" element={<NameInput handleStartQuiz={handleStartQuiz} />} />
-        ) : (
           <>
             <Route
               path="/select-level"
