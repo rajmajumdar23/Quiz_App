@@ -17,7 +17,7 @@ const QuestionPage = ({ level, handleQuizComplete }) => {
       }
 
       setTimeout(() => {
-        if (currentQuestion < 11) {
+        if (currentQuestion <= 12) {
           setSelectedOption(null);
           setCurrentQuestion(currentQuestion + 1);
         } else {
