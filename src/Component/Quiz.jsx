@@ -35,6 +35,7 @@ const Quiz = () => {
   return (
     <div className="quiz-container">
       <Routes>
+
           <Route path="/" element={<NameInput handleStartQuiz={handleStartQuiz} />} />
           <>
             <Route
@@ -59,7 +60,6 @@ const Quiz = () => {
               element={<QuizResult score={score} name={name} quizData={[]} />}
             /> 
           </>
-        )}
       </Routes>
     </div>
   );
